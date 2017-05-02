@@ -1,0 +1,36 @@
+.locale-select {
+  @include border-radius(0.25rem);
+  border: 1px solid transparent;
+  background-color: $white;
+  cursor: pointer;
+  width: 4rem;
+  > img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.menu {
+  @include z-index('locale-selection');
+  @include border-radius(0.25rem);
+  position: absolute;
+  display: none;
+  margin-top: 0.25rem;
+  background-color: $white;
+  border: 1px solid $gray-e8;
+  max-width: 4rem;
+  > .menu-item {
+    width: 100%;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    > img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.show > .menu {
+  display: block;
+}

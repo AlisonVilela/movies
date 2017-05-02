@@ -1,0 +1,7 @@
+.not-found-container{
+  @include push--auto;
+  text-align: center;
+  > h1{
+    @include font-size(5);
+  }
+}

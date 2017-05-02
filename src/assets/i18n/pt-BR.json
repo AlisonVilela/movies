@@ -1,0 +1,18 @@
+{
+  "Favorites": {
+    "FavoritesWorks": "Favoritos Funciona!"
+  },
+  "Search": {
+    "SearchWorks": "Busca Funciona!"
+  },
+  "Nav-Bar": {
+    "Movies": "Filmes",
+    "Search": "Busca",
+    "Favorites": "Favoritos"
+  },
+  "NotFound": {
+    "Whops": "Oooops!",
+    "MessageNotBeFound": "A página que você solicitou não pôde ser encontrada em nosso servidor",
+    "MessageGoHome": "Volte para a"
+  }
+}

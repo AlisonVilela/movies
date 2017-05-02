@@ -1,0 +1,8 @@
+<div ngbDropdown>
+  <button class="locale-select" ngbDropdownToggle><img src="./assets/flag/{{translate.currentLang}}.svg"></button>
+  <div class="menu">
+    <button (click)="onClickFlag('en-US')" class="menu-item"><img src="./assets/flag/en-US.svg"></button>
+    <button (click)="onClickFlag('pt-BR')" class="menu-item"><img src="./assets/flag/pt-BR.svg"></button>
+    <button (click)="onClickFlag('es-ES')" class="menu-item"><img src="./assets/flag/es-ES.svg"></button>
+  </div>
+</div>
