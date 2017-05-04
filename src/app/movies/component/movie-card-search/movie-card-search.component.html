@@ -1,0 +1,6 @@
+<div *ngIf="MovieInput" class="MovieCard">
+  <img class="MoviePoster" [src]="MovieInput.Poster" onError="this.src='https://quintaldetrocas.com.br/assets/no-image-00820c29aac828e5aca9645f2d744e239b7dab475dc0f8a18558e9a414f8af9a.png'">
+  <h4 class="MovieTitle" [routerLink]="['/movies/detail', MovieInput.imdbID]">{{MovieInput.Title}}</h4>
+  <p class="MovieType">{{MovieInput.Type}}</p>
+  <p class="MovieYear">{{MovieInput.Year}}</p>
+</div>

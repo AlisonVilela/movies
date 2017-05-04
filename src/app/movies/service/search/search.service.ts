@@ -9,14 +9,19 @@ export class SearchService {
 
   constructor(private _http: Http) { }
 
-  getConvertCurrency(CurrencyA, CurrencyB) {
-    return this._http.get(`https://api.fixer.io/latest?symbols=${CurrencyA},${CurrencyB}`)
+  getMovieByTitle(Search, Page, Type) {
+    let SearchType: string;
+    if (Type !== "All Types") {
+      SearchType = "&type=" + Type;
+    } else {
+      SearchType = "";
+    }
+    return this._http.get(`https://www.omdbapi.com/?s=${Search}${SearchType}&page=${Page}`)
       .map(res => res.json());
   }
 
-  getAllCurrency(CurrencyBase, date) {
-    return this._http.get(`https://api.fixer.io/${date.year}-${date.month > 10 ? date.month : '0' +
-    date.month}-${date.day > 10 ? date.day : '0' + date.day}?base=${CurrencyBase}`)
+  getMovieById(Imdb) {
+    return this._http.get(`http://www.omdbapi.com/?i=${Imdb}&plot=full`)
       .map(res => res.json());
   }
 }
