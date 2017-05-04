@@ -1,40 +1,41 @@
 {
   "Favorites": {
-    "Favorites movies": "Favorites movies",
-    "Filter by title, year, rating or genre": "Filter by title, year, rating or genre",
-    "Order by nothing": "Order by nothing",
-    "Order by Title": "Order by Title",
-    "Order by Year": "Order by Year",
-    "Order by Rating": "Order by Rating",
-    "Order by Genre": "Order by Genre"
+    "Favorites movies": "Filmes favoritos",
+    "Filter by title, year, rating or genre": "Filtrar por título, ano, classificação ou gênero",
+    "Order by nothing": "Ordem por nada",
+    "Order by Title": "Ordenar por Título",
+    "Order by Year": "Ordem por Ano",
+    "Order by Rating": "Ordenar por Classificação",
+    "Order by Genre": "Ordem por Género"
 
   },
   "Search": {
-    "Search movies": "Search movies",
-    "All Types": "All Types",
-    "Movie": "Movie",
+    "Search movies": "Pesquisar filmes",
+    "Search by title": "Pesquisar por título",
+    "All Types": "Todos os tipos",
+    "Movie": "Filme",
     "Series": "Series",
-    "Game": "Game",
-    "Search": "Search"
+    "Game": "Jogos",
+    "Search": "Pesquisar"
   },
   "Detail": {
-    "Year": "Year",
-    "Released": "Released",
-    "Runtime": "Runtime",
-    "Genre": "Genre",
-    "Actors": "Actors",
-    "Awards": "Awards",
-    "Rating": "Rating",
-    "Type": "Type"
+    "Year": "Ano",
+    "Released": "Liberado",
+    "Runtime": "Tempo",
+    "Genre": "Género",
+    "Actors": "Atores",
+    "Awards": "Prêmios",
+    "Rating": "Avaliação",
+    "Type": "Tipo"
   },
   "Nav-Bar": {
-    "Movies": "Movies",
-    "Search": "Search",
-    "Favorites": "Favorites"
+    "Movies": "Filmes",
+    "Search": "Procurar",
+    "Favorites": "Favoritos"
   },
   "NotFound": {
-    "Whops": "Whooops!",
-    "MessageNotBeFound": "The page you requested could not be found on our server",
-    "MessageGoHome": "Go back to the"
+    "Whops": "Ooops!",
+    "MessageNotBeFound": "A página solicitada não pôde ser encontrada no nosso servidor",
+    "MessageGoHome": "Volte para a"
   }
 }

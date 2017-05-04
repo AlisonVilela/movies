@@ -19,14 +19,14 @@ export class SearchComponent implements OnInit {
 
   public title: string;
   public type: string;
-  public SearchType: string;
+  public SearchType: string = '';
   public page: number;
 
   constructor(
     private _alertService: AlertService,
     private _searchService: SearchService
   ) {
-    this.SearchType = 'All Types';
+
   }
 
   ngOnInit() {

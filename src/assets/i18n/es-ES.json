@@ -1,40 +1,41 @@
 {
   "Favorites": {
-    "Favorites movies": "Favorites movies",
-    "Filter by title, year, rating or genre": "Filter by title, year, rating or genre",
-    "Order by nothing": "Order by nothing",
-    "Order by Title": "Order by Title",
-    "Order by Year": "Order by Year",
-    "Order by Rating": "Order by Rating",
-    "Order by Genre": "Order by Genre"
+    "Favorites movies": "Películas favoritas",
+    "Filter by title, year, rating or genre": "Filtrar por título, año, calificación o género",
+    "Order by nothing": "Ordenar por nada",
+    "Order by Title": "Ordenar por título",
+    "Order by Year": "Orden por año",
+    "Order by Rating": "Ordenar por calificación",
+    "Order by Genre": "Ordenar por género"
 
   },
   "Search": {
-    "Search movies": "Search movies",
-    "All Types": "All Types",
-    "Movie": "Movie",
-    "Series": "Series",
-    "Game": "Game",
-    "Search": "Search"
+    "Search movies": "Buscar películas",
+    "Search by title": "Búsqueda por título",
+    "All Types": "Todos los tipos",
+    "Movie": "Película",
+    "Series": "Serie",
+    "Game": "Juego",
+    "Search": "Buscar"
   },
   "Detail": {
-    "Year": "Year",
-    "Released": "Released",
-    "Runtime": "Runtime",
-    "Genre": "Genre",
-    "Actors": "Actors",
-    "Awards": "Awards",
-    "Rating": "Rating",
-    "Type": "Type"
+    "Year": "Año",
+    "Released": "Liberado",
+    "Runtime": "Tiempo",
+    "Genre": "Género",
+    "Actors": "Actores",
+    "Awards": "Premios",
+    "Rating": "Clasificación",
+    "Type": "Tipo"
   },
   "Nav-Bar": {
     "Movies": "Movies",
-    "Search": "Search",
-    "Favorites": "Favorites"
+    "Search": "Buscar",
+    "Favorites": "Favoritos"
   },
   "NotFound": {
-    "Whops": "Whooops!",
-    "MessageNotBeFound": "The page you requested could not be found on our server",
-    "MessageGoHome": "Go back to the"
+    "Whops": "Whuoops!",
+    "MessageNotBeFound": "La página solicitada no se pudo encontrar en nuestro servidor",
+    "MessageGoHome": "Volver a la"
   }
 }

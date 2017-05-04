@@ -2,7 +2,7 @@
 <form #searchForm="ngForm" (ngSubmit)="onClickSearch(SearchTitle, SearchType)">
   <div class="row justify-content-lg-center SearchForm">
     <div class="col-8">
-        <input required type="text" class="form-control" placeholder="Search by title" [(ngModel)]="SearchTitle" name="SearchTitle">
+        <input required type="text" class="form-control" placeholder="{{ 'Search by title' | translate }}" [(ngModel)]="SearchTitle" name="SearchTitle">
     </div>
     <div class="col-2">
       <select class="form-control" [(ngModel)]="SearchType" name="SearchType">
