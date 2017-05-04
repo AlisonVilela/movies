@@ -1,0 +1,41 @@
+{
+  "Favorites": {
+    "Favorites movies": "Filmes favoritos",
+    "Filter by title, year, rating or genre": "Filtrar por título, ano, classificação ou gênero",
+    "Order by nothing": "Ordem por nada",
+    "Order by Title": "Ordenar por Título",
+    "Order by Year": "Ordem por Ano",
+    "Order by Rating": "Ordenar por Classificação",
+    "Order by Genre": "Ordem por Género"
+
+  },
+  "Search": {
+    "Search movies": "Pesquisar filmes",
+    "Search by title": "Pesquisar por título",
+    "All Types": "Todos os tipos",
+    "Movie": "Filme",
+    "Series": "Series",
+    "Game": "Jogos",
+    "Search": "Pesquisar"
+  },
+  "Detail": {
+    "Year": "Ano",
+    "Released": "Liberado",
+    "Runtime": "Tempo",
+    "Genre": "Género",
+    "Actors": "Atores",
+    "Awards": "Prêmios",
+    "Rating": "Avaliação",
+    "Type": "Tipo"
+  },
+  "Nav-Bar": {
+    "Movies": "Filmes",
+    "Search": "Procurar",
+    "Favorites": "Favoritos"
+  },
+  "NotFound": {
+    "Whops": "Ooops!",
+    "MessageNotBeFound": "A página solicitada não pôde ser encontrada no nosso servidor",
+    "MessageGoHome": "Volte para a"
+  }
+}
