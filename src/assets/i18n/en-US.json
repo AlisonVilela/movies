@@ -1,9 +1,31 @@
 {
   "Favorites": {
-    "FavoritesWorks": "Favorites Works!"
+    "Favorites movies": "Favorites movies",
+    "Filter by title, year, rating or genre": "Filter by title, year, rating or genre",
+    "Order by nothing": "Order by nothing",
+    "Order by Title": "Order by Title",
+    "Order by Year": "Order by Year",
+    "Order by Rating": "Order by Rating",
+    "Order by Genre": "Order by Genre"
+
   },
   "Search": {
-    "SearchWorks": "Search Works!"
+    "Search movies": "Search movies",
+    "All Types": "All Types",
+    "Movie": "Movie",
+    "Series": "Series",
+    "Game": "Game",
+    "Search": "Search"
+  },
+  "Detail": {
+    "Year": "Year",
+    "Released": "Released",
+    "Runtime": "Runtime",
+    "Genre": "Genre",
+    "Actors": "Actors",
+    "Awards": "Awards",
+    "Rating": "Rating",
+    "Type": "Type"
   },
   "Nav-Bar": {
     "Movies": "Movies",

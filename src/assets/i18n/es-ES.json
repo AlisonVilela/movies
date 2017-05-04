@@ -1,18 +1,40 @@
 {
   "Favorites": {
-    "FavoritesWorks": "¡Favoritos Funciona!"
+    "Favorites movies": "Favorites movies",
+    "Filter by title, year, rating or genre": "Filter by title, year, rating or genre",
+    "Order by nothing": "Order by nothing",
+    "Order by Title": "Order by Title",
+    "Order by Year": "Order by Year",
+    "Order by Rating": "Order by Rating",
+    "Order by Genre": "Order by Genre"
+
   },
   "Search": {
-    "SearchWorks": "¡Busca Funciona!"
+    "Search movies": "Search movies",
+    "All Types": "All Types",
+    "Movie": "Movie",
+    "Series": "Series",
+    "Game": "Game",
+    "Search": "Search"
+  },
+  "Detail": {
+    "Year": "Year",
+    "Released": "Released",
+    "Runtime": "Runtime",
+    "Genre": "Genre",
+    "Actors": "Actors",
+    "Awards": "Awards",
+    "Rating": "Rating",
+    "Type": "Type"
   },
   "Nav-Bar": {
-    "Movies": "Películas",
-    "Search": "Busca",
-    "Favorites": "Favoritos"
+    "Movies": "Movies",
+    "Search": "Search",
+    "Favorites": "Favorites"
   },
   "NotFound": {
-    "Whops": "Ooops!",
-    "MessageNotBeFound": "La página solicitada no se pudo encontrar en nuestro servidor",
-    "MessageGoHome": "Volver a la"
+    "Whops": "Whooops!",
+    "MessageNotBeFound": "The page you requested could not be found on our server",
+    "MessageGoHome": "Go back to the"
   }
 }

@@ -4,18 +4,11 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 
+import { Movie } from './../model/movie-card.model';
+
 import { AlertService } from './../../../shared/alert/service/alert.service';
 import { SearchService } from './../../service/search/search.service';
 import { FavoritesService } from './../../service/favorites/favorites.service';
-
-export class Movie{
-    Title:string;
-    Year:string;
-    imdbID:string;
-    Type:string;
-    Poster:string;
-    TimeOfSearch:Date;
-}
 
 @Component({
   selector: 'app-favorites',
@@ -24,7 +17,7 @@ export class Movie{
 export class FavoritesComponent implements OnInit {
   public favoritesMovies: string[] = [];
   public movies: Movie[] = [];
-  public Order: string = "";
+  public Order = '';
   constructor(
     private _alertService: AlertService,
     private _favoritesService: FavoritesService,
@@ -34,7 +27,7 @@ export class FavoritesComponent implements OnInit {
   }
 
   ngOnInit() {
-    let local = this;
+    const local = this;
     this.favoritesMovies = this._favoritesService.getFavorites();
     this.favoritesMovies.forEach(function(value) {
       local._searchService.getMovieById(value)
@@ -51,13 +44,4 @@ export class FavoritesComponent implements OnInit {
       );
     });
   }
-
-  concatArraysUniqueWithSort(thisArray, otherArray) {
-    var newArray = thisArray.concat(otherArray).sort(function (a, b) {
-        return a > b ? 1 : a < b ? -1 : 0;
-    });
-    return newArray.filter(function (item, index) {
-        return newArray.indexOf(item) === index;
-    });
-  };
 }

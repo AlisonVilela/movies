@@ -43,7 +43,7 @@ export class DetailComponent implements OnInit {
     });
   }
 
-  ngOnDestroy() {
+  OnDestroy() {
     this.sub.unsubscribe();
   }
 

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Movie } from './movie-card.model'
+import { Movie } from './../model/movie-card.model';
 
 import { FavoritesService } from './../../service/favorites/favorites.service';
 

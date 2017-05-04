@@ -4,17 +4,10 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 
+import { Movie } from './../model/movie-card.model';
+
 import { AlertService } from './../../../shared/alert/service/alert.service';
 import { SearchService } from './../../service/search/search.service';
-
-export class Movie{
-    Title:string;
-    Year:string;
-    imdbID:string;
-    Type:string;
-    Poster:string;
-    TimeOfSearch:Date;
-}
 
 @Component({
   selector: 'app-search',
@@ -22,7 +15,7 @@ export class Movie{
 })
 export class SearchComponent implements OnInit {
   public movies: Movie[] = [];
-  public movie : Movie;
+  public movie: Movie;
 
   public title: string;
   public type: string;
@@ -40,7 +33,7 @@ export class SearchComponent implements OnInit {
 
   }
 
-  onClickSearch(SearchTitle, SearchType){
+  onClickSearch(SearchTitle, SearchType) {
     this.title = SearchTitle;
     this.type = SearchType;
     this.page = 1;

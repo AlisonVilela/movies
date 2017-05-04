@@ -1,16 +1,16 @@
-<h2 class="center">Favorites movies</h2>
+<h2 class="center">{{ "Favorites.Favorites movies" | translate}}</h2>
 <div class="SearchForm">
   <div class="row justify-content-lg-center">
     <div class="col-8">
-        <input required type="text" class="form-control" placeholder="Filter by title, year, rating or genre" [(ngModel)]="Filter" name="SearchTitle">
+        <input required type="text" class="form-control" placeholder="{{ 'Favorites.Filter by title, year, rating or genre' | translate}}" [(ngModel)]="Filter" name="SearchTitle">
     </div>
     <div class="col-4">
       <select class="form-control" [(ngModel)]="Order" name="SearchType">
-        <option value="">Order by nothing</option>
-        <option value="Title">Order by Title</option>
-        <option value="Year">Order by Year</option>
-        <option value="Rating">Order by Rating</option>
-        <option value="Genre">Order by Genre</option>
+        <option value="">{{ "Favorites.Order by nothing" | translate}}</option>
+        <option value="Title">{{ "Favorites.Order by Title" | translate}}</option>
+        <option value="Year">{{ "Favorites.Order by Year" | translate}}</option>
+        <option value="Rating">{{ "Favorites.Order by Rating" | translate}}</option>
+        <option value="Genre">{{ "Favorites.Order by Genre" | translate}}</option>
       </select>
     </div>
   </div>

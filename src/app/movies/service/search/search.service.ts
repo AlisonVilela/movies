@@ -12,10 +12,10 @@ export class SearchService {
 
   getMovieByTitle(Search, Page, Type) {
     let SearchType: string;
-    if (Type !== "All Types") {
-      SearchType = "&type=" + Type;
+    if (Type !== '') {
+      SearchType = '&type=' + Type;
     } else {
-      SearchType = "";
+      SearchType = '';
     }
     return this._http.get(`https://www.omdbapi.com/?s=${Search}${SearchType}&page=${Page}`)
       .map(res => res.json());
