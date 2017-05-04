@@ -19,8 +19,9 @@ export class SearchComponent implements OnInit {
 
   public title: string;
   public type: string;
-  public SearchType: string = '';
+  public SearchType = '';
   public page: number;
+  public SearchTitle = '';
 
   constructor(
     private _alertService: AlertService,

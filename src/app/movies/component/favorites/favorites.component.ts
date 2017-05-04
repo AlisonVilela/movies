@@ -18,6 +18,8 @@ export class FavoritesComponent implements OnInit {
   public favoritesMovies: string[] = [];
   public movies: Movie[] = [];
   public Order = '';
+  public Filter = '';
+
   constructor(
     private _alertService: AlertService,
     private _favoritesService: FavoritesService,
