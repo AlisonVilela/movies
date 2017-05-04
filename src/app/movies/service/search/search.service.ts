@@ -22,7 +22,7 @@ export class SearchService {
   }
 
   getMovieById(Imdb) {
-    return this._http.get(`http://www.omdbapi.com/?i=${Imdb}&plot=full`)
+    return this._http.get(`https://www.omdbapi.com/?i=${Imdb}&plot=full`)
       .map(res => res.json());
   }
 }
