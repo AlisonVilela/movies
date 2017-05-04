@@ -1,36 +1,21 @@
 import { TestBed, async } from '@angular/core/testing';
-import { HttpModule, Http } from '@angular/http';
 
-import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { MoviesModule } from './../../movies.module';
 
-import { FavoritesComponent } from './favorites.component';
+import { DetailComponent } from './detail.component';
 
-import { AlertService } from './../../../shared/alert/service/alert.service';
-
-export function HttpLoaderFactory(http: Http) {
-    return new TranslateHttpLoader(http, 'base/src/assets/i18n/', '.json');
-}
-
-describe('FavoritesComponent', () => {
+describe('DetailComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ HttpModule, TranslateModule.forRoot({
-        loader: {
-          provide: TranslateLoader,
-          useFactory: HttpLoaderFactory,
-          deps: [Http]
-        }
-      })],
+      imports: [ MoviesModule ],
       declarations: [
-        FavoritesComponent
-      ],
-      providers: [ AlertService ]
+        DetailComponent
+      ]
     }).compileComponents();
   }));
 
-  it('should create the Favorites', async(() => {
-    const fixture = TestBed.createComponent(FavoritesComponent);
+  it('should create the Detail', async(() => {
+    const fixture = TestBed.createComponent(DetailComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));

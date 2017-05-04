@@ -1,3 +1,23 @@
-<h2>
-  {{ 'Favorites.FavoritesWorks' | translate }}
-</h2>
+<h2 class="center">Favorites movies</h2>
+<div class="SearchForm">
+  <div class="row justify-content-lg-center">
+    <div class="col-8">
+        <input required type="text" class="form-control" placeholder="Filter by title, year, rating or genre" [(ngModel)]="Filter" name="SearchTitle">
+    </div>
+    <div class="col-4">
+      <select class="form-control" [(ngModel)]="Order" name="SearchType">
+        <option value="">Order by nothing</option>
+        <option value="Title">Order by Title</option>
+        <option value="Year">Order by Year</option>
+        <option value="Rating">Order by Rating</option>
+        <option value="Genre">Order by Genre</option>
+      </select>
+    </div>
+  </div>
+</div>
+<hr><br>
+<div class="row justify-content-center">
+  <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" *ngFor="let movie of movies | filterBy:['Title','Year','Rating','Genre']:Filter | orderBy: [Order]">
+    <app-movie-card [MovieInput]="movie"></app-movie-card>
+  </div>
+</div>

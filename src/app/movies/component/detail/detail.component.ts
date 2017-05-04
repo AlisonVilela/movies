@@ -7,6 +7,7 @@ import 'rxjs/add/operator/distinctUntilChanged';
 
 import { AlertService } from './../../../shared/alert/service/alert.service';
 import { SearchService } from './../../service/search/search.service';
+import { FavoritesService } from './../../service/favorites/favorites.service';
 
 @Component({
   selector: 'app-detail',
@@ -19,13 +20,14 @@ export class DetailComponent implements OnInit {
   constructor(
     private _alertService: AlertService,
     private _route: ActivatedRoute,
-    private _searchService: SearchService
+    private _searchService: SearchService,
+    private _favoritesService: FavoritesService
   ) {
 
   }
 
   ngOnInit() {
-    this.sub = this._route.params.subscribe(params => {       ;
+    this.sub = this._route.params.subscribe(params => {
        this._searchService.getMovieById(params['imdb'])
        .subscribe(
          data => {
@@ -43,5 +45,17 @@ export class DetailComponent implements OnInit {
 
   ngOnDestroy() {
     this.sub.unsubscribe();
+  }
+
+  switchFavorite(imdbID) {
+    if (this._favoritesService.isFavorite(imdbID)) {
+      this._favoritesService.deleteFavorite(imdbID);
+    } else {
+      this._favoritesService.setFavorite(imdbID);
+    }
+  }
+
+  isFavorite(imdbID) {
+    return this._favoritesService.isFavorite(imdbID);
   }
 }

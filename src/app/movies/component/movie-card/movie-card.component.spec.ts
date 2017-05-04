@@ -2,20 +2,20 @@ import { TestBed, async } from '@angular/core/testing';
 
 import { MoviesModule } from './../../movies.module';
 
-import { FavoritesComponent } from './favorites.component';
+import { MovieCardComponent } from './movie-card.component';
 
 describe('FavoritesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ MoviesModule ],
       declarations: [
-        FavoritesComponent
+        MovieCardComponent
       ]
     }).compileComponents();
   }));
 
-  it('should create the Favorites', async(() => {
-    const fixture = TestBed.createComponent(FavoritesComponent);
+  it('should create the MovieCard', async(() => {
+    const fixture = TestBed.createComponent(MovieCardComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
   }));

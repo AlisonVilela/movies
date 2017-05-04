@@ -1,0 +1,75 @@
+.MovieCard {
+  position: relative;
+  width: 250px;
+  height: 370px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.MoviePoster {
+   width: 100%;
+   height: 100%;
+}
+
+.MovieTitle {
+  position: absolute;
+  color: $white;
+  bottom: 0;
+  background-color: $asphalt-heavy;
+  opacity: 0.9;
+  width: 100%;
+  height: 80px;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  overflow:hidden;
+  cursor: pointer;
+}
+
+.MovieYear {
+  @include border-radius(5px);
+  position: absolute;
+  color: $white;
+  font-weight: bold;
+  top: 45px;
+  left: 5px;
+  background-color: $asphalt-heavy;
+  opacity: 0.9;
+  padding: 5px;
+}
+
+.MovieType {
+  @include border-radius(5px);
+  position: absolute;
+  color: $white;
+  font-weight: bold;
+  top: 5px;
+  left: 5px;
+  background-color: $asphalt-heavy;
+  opacity: 0.9;
+  padding: 5px;
+}
+
+.MovieRating {
+  @include border-radius(5px);
+  position: absolute;
+  color: $white;
+  font-weight: bold;
+  top: 65px;
+  right: 5px;
+  background-color: $yellow-heavy;
+  opacity: 0.9;
+  padding: 5px;
+}
+
+.MovieGenre {
+  @include border-radius(5px);
+  position: absolute;
+  color: $white;
+  font-size: 0.75rem;
+  bottom: 85px;
+  left: 5px;
+  background-color: $turquese-heavy;
+  opacity: 0.9;
+  padding: 5px;
+}

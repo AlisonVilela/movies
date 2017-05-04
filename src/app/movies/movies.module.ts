@@ -5,15 +5,17 @@ import { TranslateModule } from '@ngx-translate/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { InfiniteScrollModule } from 'angular2-infinite-scroll';
+import { NgPipesModule } from 'ngx-pipes';
 
 import { MoviesRoutingModule } from './movies.routing.module';
 
 import { FavoritesComponent } from './component/favorites/favorites.component';
 import { SearchComponent } from './component/search/search.component';
 import { DetailComponent } from './component/detail/detail.component';
-import { MovieCardSearchComponent } from './component/movie-card-search/movie-card-search.component';
+import { MovieCardComponent } from './component/movie-card/movie-card.component';
 
 import { SearchService } from './service/search/search.service';
+import { FavoritesService } from './service/favorites/favorites.service';
 
 @NgModule({
   imports: [
@@ -22,16 +24,18 @@ import { SearchService } from './service/search/search.service';
     FormsModule,
     MoviesRoutingModule,
     TranslateModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    NgPipesModule
   ],
   declarations: [
     FavoritesComponent,
     SearchComponent,
     DetailComponent,
-    MovieCardSearchComponent
+    MovieCardComponent
   ],
   providers: [
-    SearchService
+    SearchService,
+    FavoritesService
   ]
 })
 export class MoviesModule { }

@@ -7,7 +7,8 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class SearchService {
 
-  constructor(private _http: Http) { }
+  constructor(private _http: Http) {
+  }
 
   getMovieByTitle(Search, Page, Type) {
     let SearchType: string;

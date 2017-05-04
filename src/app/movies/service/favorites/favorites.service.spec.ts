@@ -11,7 +11,7 @@ describe('FavoritesService', () => {
     });
   });
 
-  it('should ...', inject([FavoritesService], (service: FavoritesService) => {
+  it('should create the Favorites Service', inject([FavoritesService], (service: FavoritesService) => {
     expect(service).toBeTruthy();
   }));
 });

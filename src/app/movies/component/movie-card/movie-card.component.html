@@ -1,0 +1,17 @@
+<div *ngIf="MovieInput" class="MovieCard">
+  <div class="StarFavorite" (click)="switchFavorite(MovieInput.imdbID)">
+    <ng-container *ngIf="isFavorite(MovieInput.imdbID); then thenBlock; else elseBlock"></ng-container>
+    <ng-template #thenBlock>
+      <img src="assets/starFavorite.png">
+    </ng-template>
+    <ng-template #elseBlock>
+      <img src="assets/starNotFavorite.png">
+    </ng-template>
+  </div>
+  <img class="MoviePoster" [src]="MovieInput.Poster" onError="this.src='assets/no-image.png'">
+  <h4 class="MovieTitle" [routerLink]="['/movies/detail', MovieInput.imdbID]">{{MovieInput.Title}}</h4>
+  <p class="MovieType">{{MovieInput.Type}}</p>
+  <p class="MovieYear">{{MovieInput.Year}}</p>
+  <p *ngIf="MovieInput.imdbRating" class="MovieRating">{{MovieInput.imdbRating}}</p>
+  <p *ngIf="MovieInput.Genre" class="MovieGenre">{{MovieInput.Genre}}</p>
+</div>

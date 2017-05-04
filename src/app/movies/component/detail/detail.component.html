@@ -1,3 +1,69 @@
-<h2>
-  {{ movie }}
-</h2>
+<h2 class="center">{{ movie?.Title }}</h2>
+<br><hr><br>
+<div class="row">
+  <div class="col-3">
+    <div class="MovieCard">
+      <img class="MoviePoster" [src]="movie?.Poster" onError="this.src='assets/no-image.png'">
+      <div class="StarFavorite" (click)="switchFavorite(movie?.imdbID)">
+        <ng-container *ngIf="isFavorite(movie?.imdbID); then thenBlock; else elseBlock"></ng-container>
+        <ng-template #thenBlock>
+          <img src="assets/starFavorite.png">
+        </ng-template>
+        <ng-template #elseBlock>
+          <img src="assets/starNotFavorite.png">
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div class="DetailPlot">
+            {{movie?.Plot}}
+          <div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <div class="datail-label">Year : <span>{{movie?.Year}}</span></div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <div class="datail-label">Released : <span>{{movie?.Released}}</span></div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <div class="datail-label">Runtime : <span>{{movie?.Runtime}}</span></div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <div class="datail-label">Genre : <span>{{movie?.Genre}}</span></div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <div class="datail-label">Actors : <span>{{movie?.Actors}}</span></div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <div class="datail-label">Awards : <span>{{movie?.Awards}}</span></div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-6 col-md-6">
+            <div class="datail-label">Rating : <span>{{movie?.imdbRating}}</span></div>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <div class="datail-label">Type : <span>{{movie?.Type}}</span></div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <a target="_blank" href="http://www.imdb.com/title/{{movie?.imdbID}}">IMDB</a>
+        </div>
+    </div>
+  </div>
+</div>
