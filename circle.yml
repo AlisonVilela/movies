@@ -5,14 +5,16 @@ machine:
     version: 7.10.0
 ##Customize dependencies
 dependencies:
+  pre:
+    - npm install angular/cli@latest -g
   override:
-    - npm install
+    - npm install --silent --loglevel error
 
 ##Test override
 test:
   override:
-    - ./node_modules/@angular/cli/bin/ng lint --watch=false
-    - ./node_modules/@angular/cli/bin/ng test --watch=false
-    - ./node_modules/@angular/cli/bin/ng e2e  --watch=false
+    - ng lint
+    - ng test --watch=false
+    - ng e2e --watch=false
 
 ##deployment
