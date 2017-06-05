@@ -5,8 +5,6 @@ machine:
     version: 7.10.0
 ##Customize dependencies
 dependencies:
-  pre:
-    - npm install angular/cli@latest -g
   override:
     - npm install --silent --loglevel error
 
