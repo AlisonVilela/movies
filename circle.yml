@@ -6,7 +6,7 @@ machine:
 ##Customize dependencies
 dependencies:
   override:
-    - npm install
+    - npm install --silent --loglevel error
     - npm install angular-cli@latest -g
 
 ##Test override
