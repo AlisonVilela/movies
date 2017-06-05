@@ -6,17 +6,14 @@ machine:
 ##Customize dependencies
 dependencies:
   override:
-    - npm install --silent --loglevel error
+    - npm install
     - npm install angular-cli@latest -g
 
 ##Test override
 test:
   override:
-    - echo Testing lint...
     - ng lint
-    - echo Testing Jasmine...
     - ng test --watch=false
-    - echo Testing e2e...
     - ng e2e --watch=false
 
 ##deployment
